@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+* {
+  font-family: "Urbanist" Bold;
+  margin: 0;
+  padding: 0;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vh;
+}
+
+.top-container h3,
+#countdown {
+  font-size: 35pt;
+}
+
+#countdown {
+  margin-left: 10px;
+}
+.top-container p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.level-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  height: 80vh;
+  margin: 0 auto;
+}
+
+.question-image {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.question-image img {
+  max-width: 600px;
+  width: 600px;
+  max-height: 400px;
+  height: 400px;
+  align-self: center;
+}
+
+.question-title {
+  text-align: center;
+  font-size: 30pt;
+}
+/*
+.question-options{
+  display: flex;
+  flex-direction: column;
+}
+*/
+.question-options button {
+  padding: 10px 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: #faff00;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 10px 20px;
+  width: 40%;
+  min-width: 200px;
+}
+
+.question-options button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 60%;
+}
+
+
+.modal-content {
+  background-color: white;
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 35px;
+}
+
+.modal-content h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-body p {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-body div a{
+  padding: 10px 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: #faff00;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 10px 20px;
+  width: 40%;;
+  text-decoration: none;
+  border-color: black;
+}
+
+.modal-body div a:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}

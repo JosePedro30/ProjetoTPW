@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EscapeJS a platform for learning JavaScript"
+    />
+    <meta name="author" content="Alfredo Silva and Nuno Mendonça" />
+    <title>EscapeJS</title>
+    <style>
+      /* CSS crítico inline */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .entry-img {
+          width: 100%;
+          height: auto;
+      }
+  </style>
+    <link rel="stylesheet" href="./public/styles/style.css" />
+    <link rel="stylesheet" href="./public/styles/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img src="../public/images/logo.svg" width="250px" height="100px" alt="Logo"/></a>
+        <ul class="menu">
+          <li><a href="index.html" style="color: black">Home</a></li>
+          <li><a href="./views/catalog.html">Rooms</a></li>
+          <li><a href="./views/ranking.html">Ranking</a></li>
+          <li><a href="./views/about.html">About</a></li>
+          <li><a href="./views/register.html">Sign In</a></li>
+          <li><a href="./views/profile.html" id="profile">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="first-container">
+      <div class="first-text">
+        <p id="first-title">
+          <b>Will you be able to Escape the JavaScript room ?</b>
+        </p>
+        <p id="first-description">
+          Test you knowledge by challenging yourself through a set of dynamic
+          exercises where you will find out if you got what it takes to escape
+          the JS maze.
+        </p>
+        <div class="first-button-par">
+          <button type="button" class="cta">
+            <a href="./views/register.html"><b>Get Started</b></a>
+          </button>
+          <p>More then 2,000 people have tried and failed.</p>
+        </div>
+      </div>
+      <div class="image">
+        <img class="entry-img" src="./public/images/table.svg" alt="Table" loading="lazy"/>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="second-container">
+      <div class="second-image">
+        <img src="./public/images/ranking.svg" width="350px" height="350px" alt="Ranking"/>
+      </div>
+      <div class="second-text">
+        <p id="second-title"><b>Ready to be 1st in the world ranking?</b></p>
+        <p id="second-description">
+          Get the fastest time to climb the ranking and become the greatest of
+          all time.
+        </p>
+        <div class="second-button-par">
+          <button type="button">
+            <a href="./views/ranking.html"><b>See Ranking</b></a>
+          </button>
+          <p>In this game time is gold!</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-nav">
+        <img class="logo-img" src="./public/images/logo branco.svg" alt="Logo branco"/>
+        <ul class="social">
+          <li>
+            <a href="#"
+              ><img
+                src="./public/images/facebook.svg"
+                width="50px"
+                height="50px"
+                alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./public/images/linkedin.svg"
+                width="50px"
+                height="50px"
+                alt="Linkdin"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./public/images/twitter.svg"
+                width="50px"
+                height="50px"
+                alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./public/images/instagram.svg"
+                width="50px"
+                height="50px"
+                alt="Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="./public/js/index.js" defer></script>
+    <script type="module" src="./public/js/websocket.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+* {
+  font-family: "Urbanist" Bold;
+  margin: 0;
+}
+
+.ranking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fffa7e;
+  max-width: 1800px;
+  width: 800px;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 12.5rem;
+}
+
+.ranking-container h1 {
+  font-size: 32pt;
+  border-bottom: 5px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.rankingTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem;
+  width: 300px;
+}
+
+.rankingTable th {
+  padding: 1rem;
+  text-align: center;
+}
+
+.rankingTable td {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+#showBtn {
+  padding: 10px 20px;
+  color: #fffa7e;
+  border-radius: 10px;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 100%;
+}
+
+#showBtn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}

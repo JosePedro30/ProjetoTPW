@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+* {
+  font-family: "Urbanist" !important;
+  font-weight: bold !important;
+}
+
+/*Top Container*/
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
+/*Button*/
+.top-container button {
+  border-radius: 35px;
+  width: 10%;
+  height: 10%;
+  padding: 20px 20px;
+  transition: 0.5;
+  background-color: #fffa7e;
+}
+
+.top-container button:hover {
+  transform: scale(1.2);
+  background-color: #faff00;
+}
+
+.top-container h3,
+#countdown {
+  font-size: 35pt;
+}
+
+#countdown {
+  margin-left: 10px;
+}
+.top-container p {
+  display: flex;
+  align-items: center;
+}
+
+/*Room Container*/
+.room-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.room-container img {
+  max-width: 1400px;
+  max-height: 560px;
+}
+/*
+.col-md-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+*/

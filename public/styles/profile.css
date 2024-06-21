@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 30px;
+}
+
+.profile-avatar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name,
+.email,
+.age,
+.gender,
+.levels,
+.score {
+  flex-basis: 50%;
+  padding: 1rem;
+}
+
+.editProfile {
+  align-self: flex-end;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: #faff00;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 10%;
+}
+
+.adminButton {
+  align-self: flex-end;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: #faff00;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 10%;
+  margin: 1rem;
+}
+
+.adminButton:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.editProfile:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/*Admin Container*/
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-functions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#users,
+#rooms,
+#questions,
+#scoreTime {
+  padding: 10px 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: #faff00;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 40%;
+  margin: 1rem;
+}
+
+#users:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#rooms:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#questions:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#scoreTime:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/*Tabela*/
+#table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: black;
+  color: #fffa7e;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid black;
+}
+
+.content-table tbody tr {
+  background-color: #fffa7e;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #faff00;
+}
+
+#rem,
+#add {
+  color: #fffa7e;
+  border-radius: 10px;
+  background-color: black;
+  cursor: pointer;
+}
+
+/*Modal edit profile*/
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%; /* Certifique-se de que o elemento pai ocupe a altura total da janela */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 40%;
+  height: 65%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close {
+  color: #aaa;
+  align-self: flex-end;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  width: 90%;
+  height: 50%;
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.modal-content form .form-input {
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.modal-content form .form-input input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content form .form-input input:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+select {
+  width: 80%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+select:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.form-input button {
+  padding: 10px 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: #faff00;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 80%;
+}
+
+.form-input button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
